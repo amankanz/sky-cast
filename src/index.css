@@ -11,31 +11,16 @@ html {
 }
 
 body {
-  background: rgb(255, 129, 26);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(255, 129, 26, 1) 0%,
-    rgba(140, 154, 165, 1) 60%,
-    rgba(25, 135, 162, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(255, 129, 26, 1) 0%,
-    rgba(140, 154, 165, 1) 60%,
-    rgba(25, 135, 162, 1) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(255, 129, 26, 1) 0%,
-    rgba(140, 154, 165, 1) 60%,
-    rgba(25, 135, 162, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff811a",endColorstr="#1987a2",GradientType=1);
   font-family: "Cinzel Decorative", cursive;
   font-size: 2rem;
   height: 100vh;
   color: #222;
-
+  background: linear-gradient(
+    90deg,
+    hsla(234, 80%, 88%, 1) 0%,
+    hsla(340, 68%, 88%, 1) 50%,
+    hsla(342, 72%, 85%, 1) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,10 +54,14 @@ input {
   font-family: inherit;
   color: inherit;
   font-size: 2rem;
-  background-color: #f0d2ce;
+  background-color: #f0f8ff;
   padding: 1.6rem 3.2rem;
   border: none;
   width: 32rem;
+}
+
+input::placeholder {
+  color: #708090; /* Stormy Gray placeholder text */
 }
 
 input:focus {
